@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+    
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mental Health Bot</title>
+  
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <h2>How are you feeling today?</h2>
+    <form action="/predict" method="post">
+        <textarea name="text" rows="5" cols="40" placeholder="Type your thoughts here..."></textarea><br>
+        <input type="submit" value="Analyze Emotion">
+    </form>
+</body>
+</html>

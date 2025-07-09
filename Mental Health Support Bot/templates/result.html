@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Emotion</title>
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h2>Your Emotion: {{ emotion }}</h2>
+    <p>{{ support }}</p>
+    <a href="index.html">Try again</a>
+</body>
+</html>
